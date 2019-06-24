@@ -11,12 +11,12 @@ namespace MyConsoleApp
 
         public override void OpenConnection()
         {
-            Console.WriteLine("OracleConnection is opened.");
+            Console.WriteLine("Connection to " + this.ConnectionString + " opened");
         }
 
         public override void CloseConnection()
         {
-            Console.WriteLine("OracleConnection is closed.");
+            Console.WriteLine("Connection closed.");
         }
     }
 }

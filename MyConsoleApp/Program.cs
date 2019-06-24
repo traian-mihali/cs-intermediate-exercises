@@ -22,7 +22,6 @@ namespace MyConsoleApp
 //            engine.Run(workflow);
 
             var sqlConnection = new SqlConnection("https://localhost/mySqlConnection");
-            
             var dbCommand = new DbCommand(sqlConnection, "instruction");
             dbCommand.Execute();
             
@@ -30,20 +29,13 @@ namespace MyConsoleApp
             var dbCommand1 = new DbCommand(oracleConnection, "instruction");
             dbCommand1.Execute();
 
-            Console.WriteLine("OracleConnection timeout: " + oracleConnection.Timeout);
-            oracleConnection.OpenConnection();
-            oracleConnection.CloseConnection();
-
-            //            var stack = new Stack(new ArrayList());
-            //
-            //            for(var i = 1; i <= 5; i++)
-            //                stack.Push(i);
-            //
-            //            for (var i = 0; i < 5; i++)
-            //                Console.WriteLine(stack.Pop());
-
-            //            var stopwatch = new Stopwatch();
-            //            DisplayStopwatchDuration(stopwatch);
+//            var stack = new Stack(new ArrayList());
+//
+//            for(var i = 1; i <= 5; i++)
+//                stack.Push(i);
+//
+//            for (var i = 0; i < 5; i++)
+//                Console.WriteLine(stack.Pop());
 
 //            var post = new Post();
 //            DisplayPostVotes(post);
@@ -62,21 +54,5 @@ namespace MyConsoleApp
             Console.WriteLine("Votes: " + post.Vote);
         }
 
-//        private static void DisplayStopwatchDuration(Stopwatch stopwatch)
-//        {
-//            for (var i = 0; i < 2; i++)
-//            {
-//                stopwatch.Start();
-//
-//                Thread.Sleep(1000);
-//
-//                stopwatch.Stop();
-//
-//                Console.WriteLine("Duration: {0} milisecond/s", stopwatch.Duration());
-//
-//                Console.WriteLine("Press enter to run the stopwatch one more time..");
-//                Console.ReadLine();
-//            }
-//        }
     }
 }

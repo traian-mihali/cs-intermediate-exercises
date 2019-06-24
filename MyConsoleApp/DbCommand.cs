@@ -23,7 +23,7 @@ namespace MyConsoleApp
         {
             _dbConnection.OpenConnection();
 
-            Console.WriteLine("An instruction is send to the Database.");
+            Console.WriteLine("Instruction sent to  Database.");
 
             _dbConnection.CloseConnection();
         }

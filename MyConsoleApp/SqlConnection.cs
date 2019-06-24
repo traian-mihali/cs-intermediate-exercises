@@ -11,12 +11,12 @@ namespace MyConsoleApp
 
         public override void OpenConnection()
         {
-            Console.WriteLine("SqlConnection is opened.");
+            Console.WriteLine("Connection to " + this.ConnectionString + " opened");
         }
 
         public override void CloseConnection()
         {
-            Console.WriteLine("SqlConnection is closed.");
+            Console.WriteLine("Connection closed.");
         }
     }
 }
